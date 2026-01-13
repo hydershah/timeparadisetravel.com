@@ -8,34 +8,71 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-info">
+                    <span><i class="fas fa-phone-alt"></i> <a href="tel:+97143219130">+971 4 321 9130</a></span>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:info@timeparadisetravel.com">info@timeparadisetravel.com</a></span>
+                    <span><i class="fas fa-clock"></i> Mon - Sat: 9AM - 6PM</span>
+                </div>
+                <div class="top-social">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://wa.me/97143219130" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
-            <div class="nav-container">
-                <a href="index.html" class="logo">
-                    <span class="logo-icon"><i class="fas fa-plane-departure"></i></span>
-                    <span class="logo-text">Time Paradise<span class="logo-sub">Travel & Tourism</span></span>
-                </a>
-                <button class="nav-toggle" aria-label="Toggle navigation">
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html" class="nav-link">Home</a></li>
-                    <li><a href="about.html" class="nav-link">About Us</a></li>
-                    <li><a href="services.html" class="nav-link active">Services</a></li>
-                    <li><a href="destinations.html" class="nav-link">Destinations</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                </ul>
+            <div class="container">
+                <div class="nav-container">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><i class="fas fa-plane-departure"></i></span>
+                        <div class="logo-text">
+                            <span class="logo-main">Time Paradise</span>
+                            <span class="logo-sub">Travel & Tourism L.L.C</span>
+                        </div>
+                    </a>
+                    <button class="nav-toggle" aria-label="Toggle navigation">
+                        <span class="hamburger"></span>
+                    </button>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Home</a></li>
+                        <li><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="has-dropdown">
+                            <a href="services.html" class="nav-link active">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#visa">Visa Services</a></li>
+                                <li><a href="#flights">Flight Booking</a></li>
+                                <li><a href="#hotels">Hotel Reservation</a></li>
+                                <li><a href="#packages">Tour Packages</a></li>
+                                <li><a href="#car-rental">Car Rental</a></li>
+                                <li><a href="#insurance">Travel Insurance</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="destinations.html" class="nav-link">Destinations</a></li>
+                        <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                    <a href="https://wa.me/97143219130" class="btn btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                </div>
             </div>
         </nav>
     </header>
 
     <!-- Page Header -->
-    <section class="page-header page-header-services">
+    <section class="page-header">
         <div class="page-header-overlay"></div>
         <div class="container">
             <h1>Our Services</h1>
@@ -51,6 +88,7 @@
     <section class="services-intro">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">What We Offer</span>
                 <h2>Comprehensive Travel Solutions</h2>
                 <p>From visa processing to complete travel packages, we offer everything you need for a seamless travel experience</p>
             </div>
@@ -67,20 +105,18 @@
                     </div>
                     <h2>Visa Services</h2>
                     <p>We provide comprehensive visa assistance for UAE and international destinations. Our experienced team ensures smooth and hassle-free visa processing with high approval rates.</p>
-                    <div class="service-features">
+                    <div class="service-features-list">
                         <h4>Our Visa Services Include:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> UAE Tourist Visa (14, 30, 60, 90 days)</li>
-                            <li><i class="fas fa-check"></i> UAE Business Visa</li>
-                            <li><i class="fas fa-check"></i> UAE Transit Visa</li>
-                            <li><i class="fas fa-check"></i> Schengen Visa Assistance</li>
-                            <li><i class="fas fa-check"></i> US & UK Visa Assistance</li>
-                            <li><i class="fas fa-check"></i> Asia & Far East Visas</li>
-                            <li><i class="fas fa-check"></i> Express/Urgent Processing</li>
-                            <li><i class="fas fa-check"></i> Visa Extension Services</li>
+                            <li><i class="fas fa-check-circle"></i> UAE Tourist Visa (14, 30, 60, 90 days)</li>
+                            <li><i class="fas fa-check-circle"></i> UAE Business Visa</li>
+                            <li><i class="fas fa-check-circle"></i> UAE Transit Visa</li>
+                            <li><i class="fas fa-check-circle"></i> Schengen Visa Assistance</li>
+                            <li><i class="fas fa-check-circle"></i> US & UK Visa Assistance</li>
+                            <li><i class="fas fa-check-circle"></i> Express/Urgent Processing</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
+                    <a href="contact.html" class="btn btn-primary">Get Quote <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-detail-image">
                     <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600" alt="Visa Services">
@@ -92,7 +128,7 @@
     <!-- Flight Booking -->
     <section class="service-detail alternate" id="flights">
         <div class="container">
-            <div class="service-detail-grid">
+            <div class="service-detail-grid reverse">
                 <div class="service-detail-image">
                     <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=600" alt="Flight Booking">
                 </div>
@@ -102,20 +138,18 @@
                     </div>
                     <h2>Flight Booking</h2>
                     <p>Book domestic and international flights at competitive prices. We partner with all major airlines to offer you the best deals and convenient schedules for your journey.</p>
-                    <div class="service-features">
+                    <div class="service-features-list">
                         <h4>Flight Services Include:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Economy, Business & First Class</li>
-                            <li><i class="fas fa-check"></i> Domestic & International Flights</li>
-                            <li><i class="fas fa-check"></i> Round Trip & One Way</li>
-                            <li><i class="fas fa-check"></i> Multi-City Bookings</li>
-                            <li><i class="fas fa-check"></i> Group Bookings</li>
-                            <li><i class="fas fa-check"></i> Last Minute Deals</li>
-                            <li><i class="fas fa-check"></i> Flight + Hotel Packages</li>
-                            <li><i class="fas fa-check"></i> 24/7 Support</li>
+                            <li><i class="fas fa-check-circle"></i> Economy, Business & First Class</li>
+                            <li><i class="fas fa-check-circle"></i> Domestic & International Flights</li>
+                            <li><i class="fas fa-check-circle"></i> Round Trip & One Way</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-City Bookings</li>
+                            <li><i class="fas fa-check-circle"></i> Group Bookings</li>
+                            <li><i class="fas fa-check-circle"></i> Last Minute Deals</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn btn-primary">Book Now</a>
+                    <a href="contact.html" class="btn btn-primary">Book Now <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -131,20 +165,18 @@
                     </div>
                     <h2>Hotel Reservations</h2>
                     <p>From budget-friendly accommodations to luxury resorts, we offer a wide range of hotels to suit every preference and budget. Enjoy exclusive rates and amenities.</p>
-                    <div class="service-features">
+                    <div class="service-features-list">
                         <h4>Accommodation Options:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Luxury 5-Star Hotels</li>
-                            <li><i class="fas fa-check"></i> Business Hotels</li>
-                            <li><i class="fas fa-check"></i> Beach Resorts</li>
-                            <li><i class="fas fa-check"></i> Budget Hotels</li>
-                            <li><i class="fas fa-check"></i> Serviced Apartments</li>
-                            <li><i class="fas fa-check"></i> Boutique Hotels</li>
-                            <li><i class="fas fa-check"></i> Group Accommodations</li>
-                            <li><i class="fas fa-check"></i> Long Stay Packages</li>
+                            <li><i class="fas fa-check-circle"></i> Luxury 5-Star Hotels</li>
+                            <li><i class="fas fa-check-circle"></i> Business Hotels</li>
+                            <li><i class="fas fa-check-circle"></i> Beach Resorts</li>
+                            <li><i class="fas fa-check-circle"></i> Budget Hotels</li>
+                            <li><i class="fas fa-check-circle"></i> Serviced Apartments</li>
+                            <li><i class="fas fa-check-circle"></i> Long Stay Packages</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn btn-primary">Find Hotels</a>
+                    <a href="contact.html" class="btn btn-primary">Find Hotels <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-detail-image">
                     <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600" alt="Hotel Reservations">
@@ -156,7 +188,7 @@
     <!-- Tour Packages -->
     <section class="service-detail alternate" id="packages">
         <div class="container">
-            <div class="service-detail-grid">
+            <div class="service-detail-grid reverse">
                 <div class="service-detail-image">
                     <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600" alt="Tour Packages">
                 </div>
@@ -166,20 +198,18 @@
                     </div>
                     <h2>Tour Packages</h2>
                     <p>Explore our carefully curated tour packages designed to give you the best travel experience. From romantic getaways to family adventures, we have something for everyone.</p>
-                    <div class="service-features">
+                    <div class="service-features-list">
                         <h4>Package Types:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Honeymoon Packages</li>
-                            <li><i class="fas fa-check"></i> Family Holiday Packages</li>
-                            <li><i class="fas fa-check"></i> Group Tours</li>
-                            <li><i class="fas fa-check"></i> Adventure Tours</li>
-                            <li><i class="fas fa-check"></i> Cultural & Heritage Tours</li>
-                            <li><i class="fas fa-check"></i> Cruise Packages</li>
-                            <li><i class="fas fa-check"></i> Religious Pilgrimage Tours</li>
-                            <li><i class="fas fa-check"></i> Customized Packages</li>
+                            <li><i class="fas fa-check-circle"></i> Honeymoon Packages</li>
+                            <li><i class="fas fa-check-circle"></i> Family Holiday Packages</li>
+                            <li><i class="fas fa-check-circle"></i> Desert Safari Tours</li>
+                            <li><i class="fas fa-check-circle"></i> Adventure Tours</li>
+                            <li><i class="fas fa-check-circle"></i> Cruise Packages</li>
+                            <li><i class="fas fa-check-circle"></i> Customized Packages</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn btn-primary">View Packages</a>
+                    <a href="contact.html" class="btn btn-primary">View Packages <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -195,20 +225,18 @@
                     </div>
                     <h2>Car Rentals</h2>
                     <p>Travel at your own pace with our car rental services. We offer a wide range of vehicles from economy cars to luxury SUVs for airport transfers, city tours, and daily rentals.</p>
-                    <div class="service-features">
+                    <div class="service-features-list">
                         <h4>Rental Options:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Economy & Compact Cars</li>
-                            <li><i class="fas fa-check"></i> Sedan & Luxury Cars</li>
-                            <li><i class="fas fa-check"></i> SUVs & 4x4 Vehicles</li>
-                            <li><i class="fas fa-check"></i> Minivans & People Carriers</li>
-                            <li><i class="fas fa-check"></i> Airport Transfers</li>
-                            <li><i class="fas fa-check"></i> Chauffeur Services</li>
-                            <li><i class="fas fa-check"></i> Daily/Weekly/Monthly Rentals</li>
-                            <li><i class="fas fa-check"></i> Full Insurance Coverage</li>
+                            <li><i class="fas fa-check-circle"></i> Economy & Compact Cars</li>
+                            <li><i class="fas fa-check-circle"></i> Sedan & Luxury Cars</li>
+                            <li><i class="fas fa-check-circle"></i> SUVs & 4x4 Vehicles</li>
+                            <li><i class="fas fa-check-circle"></i> Airport Transfers</li>
+                            <li><i class="fas fa-check-circle"></i> Chauffeur Services</li>
+                            <li><i class="fas fa-check-circle"></i> Full Insurance Coverage</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn btn-primary">Rent a Car</a>
+                    <a href="contact.html" class="btn btn-primary">Rent a Car <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="service-detail-image">
                     <img src="https://images.unsplash.com/photo-1449965408869-ebd3fee56acb?w=600" alt="Car Rental">
@@ -220,7 +248,7 @@
     <!-- Travel Insurance -->
     <section class="service-detail alternate" id="insurance">
         <div class="container">
-            <div class="service-detail-grid">
+            <div class="service-detail-grid reverse">
                 <div class="service-detail-image">
                     <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=600" alt="Travel Insurance">
                 </div>
@@ -230,20 +258,18 @@
                     </div>
                     <h2>Travel Insurance</h2>
                     <p>Travel with peace of mind with our comprehensive travel insurance plans. We offer coverage for medical emergencies, trip cancellations, lost luggage, and more.</p>
-                    <div class="service-features">
+                    <div class="service-features-list">
                         <h4>Coverage Includes:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i> Medical & Health Coverage</li>
-                            <li><i class="fas fa-check"></i> Trip Cancellation Protection</li>
-                            <li><i class="fas fa-check"></i> Lost/Delayed Baggage Cover</li>
-                            <li><i class="fas fa-check"></i> Flight Delay Compensation</li>
-                            <li><i class="fas fa-check"></i> Emergency Evacuation</li>
-                            <li><i class="fas fa-check"></i> Personal Accident Cover</li>
-                            <li><i class="fas fa-check"></i> 24/7 Assistance</li>
-                            <li><i class="fas fa-check"></i> Schengen Visa Insurance</li>
+                            <li><i class="fas fa-check-circle"></i> Medical & Health Coverage</li>
+                            <li><i class="fas fa-check-circle"></i> Trip Cancellation Protection</li>
+                            <li><i class="fas fa-check-circle"></i> Lost/Delayed Baggage Cover</li>
+                            <li><i class="fas fa-check-circle"></i> Emergency Evacuation</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 Assistance</li>
+                            <li><i class="fas fa-check-circle"></i> Schengen Visa Insurance</li>
                         </ul>
                     </div>
-                    <a href="contact.html" class="btn btn-primary">Get Insured</a>
+                    <a href="contact.html" class="btn btn-primary">Get Insured <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -253,6 +279,7 @@
     <section class="additional-services">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">More Services</span>
                 <h2>Additional Services</h2>
                 <p>More ways we can assist you</p>
             </div>
@@ -299,8 +326,13 @@
                 <h2>Need Help Planning Your Trip?</h2>
                 <p>Contact us today and let our experts create the perfect travel itinerary for you</p>
                 <div class="cta-buttons">
-                    <a href="tel:04-3219130" class="btn btn-primary"><i class="fas fa-phone-alt"></i> Call Now</a>
-                    <a href="contact.html" class="btn btn-secondary">Send Inquiry</a>
+                    <a href="tel:+97143219130" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone-alt"></i> +971 4 321 9130
+                    </a>
+                    <a href="https://wa.me/97143219130" class="btn btn-whatsapp btn-lg">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Us
+                    </a>
+                    <a href="contact.html" class="btn btn-outline btn-lg">Send Inquiry</a>
                 </div>
             </div>
         </div>
@@ -311,41 +343,44 @@
         <div class="footer-main">
             <div class="container">
                 <div class="footer-grid">
-                    <div class="footer-col">
+                    <div class="footer-col footer-about">
                         <div class="footer-logo">
                             <span class="logo-icon"><i class="fas fa-plane-departure"></i></span>
-                            <span class="logo-text">Time Paradise<span class="logo-sub">Travel & Tourism</span></span>
+                            <div class="logo-text">
+                                <span class="logo-main">Time Paradise</span>
+                                <span class="logo-sub">Travel & Tourism L.L.C</span>
+                            </div>
                         </div>
-                        <p>Your trusted travel partner in Dubai, UAE. We are committed to providing exceptional travel experiences and personalized service.</p>
+                        <p>Your trusted travel partner in Dubai, UAE. We provide comprehensive travel solutions including visa services, flight bookings, hotel reservations, and customized tour packages.</p>
                         <div class="social-links">
                             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
                             <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://wa.me/97143219130" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                         </div>
                     </div>
                     <div class="footer-col">
                         <h3>Quick Links</h3>
                         <ul class="footer-links">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="destinations.html">Destinations</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                            <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                            <li><a href="destinations.html"><i class="fas fa-chevron-right"></i> Destinations</a></li>
+                            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact Us</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <h3>Our Services</h3>
                         <ul class="footer-links">
-                            <li><a href="#visa">Visa Services</a></li>
-                            <li><a href="#flights">Flight Booking</a></li>
-                            <li><a href="#hotels">Hotel Reservations</a></li>
-                            <li><a href="#packages">Tour Packages</a></li>
-                            <li><a href="#insurance">Travel Insurance</a></li>
+                            <li><a href="#visa"><i class="fas fa-chevron-right"></i> Visa Services</a></li>
+                            <li><a href="#flights"><i class="fas fa-chevron-right"></i> Flight Booking</a></li>
+                            <li><a href="#hotels"><i class="fas fa-chevron-right"></i> Hotel Reservation</a></li>
+                            <li><a href="#packages"><i class="fas fa-chevron-right"></i> Tour Packages</a></li>
+                            <li><a href="#car-rental"><i class="fas fa-chevron-right"></i> Car Rental</a></li>
                         </ul>
                     </div>
-                    <div class="footer-col">
-                        <h3>Contact Info</h3>
+                    <div class="footer-col footer-contact">
+                        <h3>Contact Us</h3>
                         <ul class="contact-info">
                             <li>
                                 <i class="fas fa-map-marker-alt"></i>
@@ -353,15 +388,17 @@
                             </li>
                             <li>
                                 <i class="fas fa-phone-alt"></i>
-                                <a href="tel:04-3219130">04-3219130</a>
+                                <a href="tel:+97143219130">+971 4 321 9130</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-whatsapp"></i>
+                                <a href="https://wa.me/97143219130">+971 4 321 9130</a>
                             </li>
                             <li>
                                 <i class="fas fa-envelope"></i>
-                                <a href="mailto:info@timeparadisetravel.com">info@timeparadisetravel.com</a>
-                            </li>
-                            <li>
-                                <i class="fas fa-clock"></i>
-                                <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                                <div class="email-links">
+                                    <a href="mailto:info@timeparadisetravel.com">info@timeparadisetravel.com</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -370,10 +407,29 @@
         </div>
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2024 Time Paradise Travel & Tourism L.L.C. All Rights Reserved.</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Time Paradise Travel & Tourism L.L.C. All Rights Reserved.</p>
+                    <div class="payment-methods">
+                        <span>We Accept:</span>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-amex"></i>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/97143219130" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span>Chat with us</span>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="js/main.js"></script>
 </body>
