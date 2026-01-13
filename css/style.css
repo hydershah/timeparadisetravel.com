@@ -54,6 +54,16 @@ body {
     overflow-x: hidden;
 }
 
+/* Accessible focus states */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--primary-light);
+    outline-offset: 2px;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -302,6 +312,19 @@ img {
 .hamburger::before { transform: translateY(-8px); }
 .hamburger::after { transform: translateY(5px); }
 
+/* Hamburger active state */
+.nav-toggle.active .hamburger {
+    background: transparent;
+}
+
+.nav-toggle.active .hamburger::before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.nav-toggle.active .hamburger::after {
+    transform: translateY(0) rotate(-45deg);
+}
+
 /* ================================
    Buttons
    ================================ */
@@ -376,6 +399,16 @@ img {
     background: #128c7e;
     border-color: #128c7e;
     transform: translateY(-2px);
+}
+
+/* Desktop-only WhatsApp CTA (hide on mobile) */
+.btn-whatsapp-desktop {
+    display: inline-flex;
+}
+
+/* Mobile-only WhatsApp CTA inside nav menu */
+.nav-cta {
+    display: none;
 }
 
 .btn-white {
@@ -617,7 +650,6 @@ img {
 
 .search-form select:focus,
 .search-form input:focus {
-    outline: none;
     border-color: var(--primary);
 }
 
@@ -1642,7 +1674,6 @@ img {
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-    outline: none;
     border-color: var(--primary);
 }
 
@@ -2197,6 +2228,12 @@ img {
     gap: 20px;
 }
 
+.top-bar-left {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
 .top-bar-left a {
     color: rgba(255, 255, 255, 0.9);
     display: flex;
@@ -2353,8 +2390,18 @@ img {
         display: block;
     }
 
-    .btn-whatsapp {
+    .btn-whatsapp-desktop {
         display: none;
+    }
+
+    .nav-cta {
+        display: block;
+        padding-top: 15px;
+    }
+
+    .nav-cta .btn-whatsapp {
+        width: 100%;
+        justify-content: center;
     }
 
     .slide-content h1 {
